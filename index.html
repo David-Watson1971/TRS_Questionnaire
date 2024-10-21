@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>TRS Questionnaire</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <form id="myTRSForm" class="form">
+        <div class="form__title">A Guide for Fee Earners on Potential TRS Registrations in the Administration of an Estate</div><br>
+    
+    <div class="EstateDetails">
+
+        <label for="">Name of the Estate:</label>
+        <input type="text" class="text_boxes"><br>
+        <label for="">Client ID:</label>
+        <input type="text" class="text_boxes"><br>
+        <label for="">Date of Death:</label>
+        <input type="date" class="text_boxes"><br><br>
+
+    </div>
+
+    <div class="FormQuestions">
+
+
+        <label for="question1">1. Did the Deceased leave a Will?</label><br>
+            <input type="radio" id="Y" name="question1" value="Y"> Yes<br>
+            <input type="radio" id="N" name="question1" value="Y"> No<br>
+
+            <div id="AnswerY" class="hidden">
+                <label for="question2"><br>2. Does the Will leave the Residue of the Estate 'on Trust'?</label><br>
+                <input type="radio" id="YY" name="question2" value="YY"> Yes<br>
+                <input type="radio" id="YN" name="question2" value="YN"> No<br>
+            </div>
+
+            <div id="AnswerN" class="hidden">
+                <label for="question3"><br>2. Did the Deceased own a share in Land or Property (as a Tenant in Common)?</label><br>
+                <input type="radio" id="NY" name="question3" value="NY"> Yes<br>
+                <input type="radio" id="NN" name="question3" value="NN"> No<br>
+            </div>
+
+            <div id="AnswerYY" class="hidden">
+                <label for="question4"><br>3. Did the Deceased own a share in Land or Property (as a Tenant in Common)?</label><br>
+                <input type="radio" id="YYY" name="question4" value="YYY"> Yes<br>
+                <input type="radio" id="YYN" name="question4" value="YYN"> No<br>
+            </div>
+        
+            <div id="AnswerYN" class="hidden">
+                <label for="question5"><br>3. Did the Deceased own a share in Land or Property (as a Tenant in Common)?</label><br>
+                <input type="radio" id="YNY" name="question5" value="YNY"> Yes<br>
+                <input type="radio" id="YNN" name="question5" value="YNN"> No<br>
+            </div>
+        
+            <div id="AnswerYYY" class="hidden">
+                <label for="question6"><br>4. Does the Will create any further Trusts once the Administration has been completed?</label><br>
+                <input type="radio" id="YYYY" name="question6" value="YYYY"> Yes<br>
+                <input type="radio" id="YYYN" name="question6" value="YYYN"> No<br>
+            </div>
+
+            <div id="AnswerYYN" class="hidden">
+                <label for="question7"><br>4. Does the Will create any further Trusts once the Administration has been completed?</label><br>
+                <input type="radio" id="YYNY" name="question7" value="YYNY"> Yes<br>
+                <input type="radio" id="YYNN" name="question7" value="YYNN"> No<br>
+            </div>
+        
+            <div id="AnswerYYYY" class="hidden">
+                <label for="question8"><br>5. Have 2 Years passed since the Deceased's Date of Death?</label><br>
+                <input type="radio" id="YYYYY" name="question8" value="YYYYY"> Yes<br>
+                <input type="radio" id="YYYYN" name="question8" value="YYYYN"> No<br>
+            </div>
+
+            <div id="AnswerYYNY" class="hidden">
+                <label for="question9"><br>5. Have 2 Years passed since the Deceased's Date of Death?</label><br>
+                <input type="radio" id="YYNYY" name="question9" value="YYNYY"> Yes<br>
+                <input type="radio" id="YYNYN" name="question9" value="YYNYN"> No<br>
+            </div>
+        
+            <div id="AnswerYYNN" class="hidden">
+                <label for="question10"><br>5. Have 2 Years passed since the Deceased's Date of Death?</label><br>
+                <input type="radio" id="YYNNY" name="question10" value="YYNNY"> Yes<br>
+                <input type="radio" id="YYNNN" name="question10" value="YYNNN"> No<br>
+            </div>
+        
+            <div id="AnswerYYYN" class="hidden">
+                <label for="question10"><br>5. Have 2 Years passed since the Deceased's Date of Death?</label><br>
+                <input type="radio" id="YYYNY" name="question11" value="YYYNY"> Yes<br>
+                <input type="radio" id="YYYNN" name="question11" value="YYYNN"> No<br>
+            </div>
+        
+    </div>
+      
+    <div class="FormAnswers">
+        <div id="AnswerYYYYY" class="hidden">
+            <label for="statement1"><br>Summary</label><br>
+            <ul>
+                    <li>The Property Trust needs to be Registered immediately</li>
+                    <li>The Trust of Residue needs to be Registered</li>
+                    <li>The Will Trust(s) need to be Registered within 90 days of the second anniversary of the Deceased's Date of Death or within 90 Days of the Assets beimg Transferred to the Trustees</li>
+            </ul>
+        </div>
+
+        <div id="AnswerNN" class="hidden">
+            <label for="statement2"><br>Summary</label><br>
+            <ul>
+                    <li>No TRS Registration Required</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerNY" class="hidden">
+            <label for="statement3"><br>Summary</label><br>
+            <ul>
+                    <li>Need to Register Property Trust on TRS within 90 days following the death of the Deceased</li>
+            </ul>
+        </div>
+
+        <div id="AnswerYNY" class="hidden">
+            <label for="statement4"><br>Summary</label><br>
+            <ul>
+                    <li>Need to Register Property Trust on TRS within 90 days following the death of the Deceased</li>
+            </ul>
+        </div>
+
+        <div id="AnswerYNN" class="hidden">
+            <label for="statement5"><br>Summary</label><br>
+            <ul>
+                    <li>No TRS Registration Required</li>
+            </ul>
+        </div>
+        
+        
+        <div id="AnswerYYNYY" class="hidden">
+            <label for="statement6"><br>Summary</label><br>
+            <ul>
+                <li>The Trust of Residue needs to be Registered immediately (or within 90 days of teh second anniversary of the Deceased's Date of Death, if later)</li>
+                <li>The Will Trust(s) need(s) to be Registered within 90 days of the second anniversary of the Deceased's Date of Death or within 90 Days of the Assets beimg Transferred to the Trustees (whichever is later)</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerYYNNY" class="hidden">
+            <label for="statement7"><br>Summary</label><br>
+            <ul>
+                <li>The Trust of Residue needs to be Registered immediately (or within 90 Days of the Second Anniversary of the Deceased's Date of Death, if later)</li>             
+            </ul>
+        </div>
+        
+        <div id="AnswerYYNNN" class="hidden">
+            <label for="statement8"><br>Summary</label><br>
+            <ul>
+                <li>No Registration Required at this time.  You will need to Register the Trust of Residue within 90 Days of the second anniversary of the Deceased's Date of Death</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerYYNYN" class="hidden">
+            <label for="statement9"><br>Summary</label><br>
+            <ul>
+                <li>No Registration Required at this time.</li>
+                <li>You will need to Register the Trust of Residue within 90 Days of the second anniversary of the Deceased's Date of Death</li>
+                <li>The Will Trust(s) need to be Registered within 90 days of the second anniversary of the Deceased's Date of Death or within 90 Days of the Assets beimg Transferred to the Trustees (whichever is later)</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerYYYNY" class="hidden">
+            <label for="statement10"><br>Summary</label><br>
+            <ul>
+                <li>The Property Trust needs to be Registered immediately.</li>
+                <li>The Trust of Residue needs to be Registered immediately (or within 90 Days of the Second Anniversary of the Deceased's Date of Death, if later)</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerYYYNN" class="hidden">
+            <label for="statement11"><br>Summary</label><br>
+            <ul>
+                <li>The Property Trust needs to be Registered immediately.</li>
+                <li>You will need to Register the Trust of Residue within 90 Days of the second anniversary of the Deceased's Date of Death</li>
+            </ul>
+        </div>
+        
+        <div id="AnswerYYYYN" class="hidden">
+            <label for="statement12"><br>Summary</label><br>
+            <ul>
+                <li>The Property Trust needs to be Registered immediately.</li>
+                <li>You will need to Register the Trust of Residue within 90 Days of the second anniversary of the Deceased's Date of Death</li>
+                <li>The Will Trust(s) need to be Registered within 90 days of the second anniversary of the Deceased's Date of Death or within 90 Days of the Assets beimg Transferred to the Trustees (whichever is later)</li>
+            </ul>
+        </div><br>
+    
+    </div>
+
+        
+            <button type="button" class="mybutton" onclick="location.reload()">Restart Form</button>
+            <button type="button" class="mybutton" onclick="printForm()">Print Form</button>
+        
+
+    </form>
+  
+    <script>
+
+        function printForm() {
+
+            window.print();
+            
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('myTRSForm');
+            const YRadio = document.getElementById('AnswerY');
+            const NRadio = document.getElementById('AnswerN');
+            const YYRadio = document.getElementById('AnswerYY');
+            const NNRadio = document.getElementById('AnswerNN');
+            const YNRadio = document.getElementById('AnswerYN');
+            const NYRadio = document.getElementById('AnswerNY');
+            const YYYRadio = document.getElementById('AnswerYYY');
+            const YYNRadio = document.getElementById('AnswerYYN');
+            const YNYRadio = document.getElementById('AnswerYNY');
+            const YNNRadio = document.getElementById('AnswerYNN');
+            const YYYYRadio = document.getElementById('AnswerYYYY');
+            const YYNYRadio = document.getElementById('AnswerYYNY');
+            const YYNNRadio = document.getElementById('AnswerYYNN');
+            const YYYNRadio = document.getElementById('AnswerYYYN');
+            const YYYYYRadio = document.getElementById('AnswerYYYYY');
+            const YYNYYRadio = document.getElementById('AnswerYYNYY');
+            const YYNNYRadio = document.getElementById('AnswerYYNNY');
+            const YYNNNRadio = document.getElementById('AnswerYYNNN');
+            const YYNYNRadio = document.getElementById('AnswerYYNYN');
+            const YYYNYRadio = document.getElementById('AnswerYYYNY');
+            const YYYNNRadio = document.getElementById('AnswerYYYNN');
+            const YYYYNRadio = document.getElementById('AnswerYYYYN');
+
+
+            Y.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerY.classList.remove('hidden');
+                    AnswerN.classList.add('hidden');
+                }
+            });
+            
+            N.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerN.classList.remove('hidden');
+                    AnswerY.classList.add('hidden');
+                }
+
+            });  
+
+            YY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYY.classList.remove('hidden');
+                    AnswerNN.classList.add('hidden');
+                    N.disabled = true;
+                    YN.disabled = true;
+                }
+            });
+
+            NN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerNN.classList.remove('hidden');
+                    AnswerYY.classList.add('hidden');
+                    Y.disabled = true;
+                    NY.disabled = true;
+                }
+            });
+
+            YYY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYY.classList.remove('hidden');
+                    YYN.disabled = true;
+                }
+            });
+
+
+
+            YYYY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYY.classList.remove('hidden');
+                    YYYN.disabled = true;
+                }
+            });
+            
+
+            
+            YYYYY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYYY.classList.remove('hidden');
+                    YYYYN.disabled = true;
+                }
+            });
+
+            NY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerNY.classList.remove('hidden');
+                    Y.disabled = true;
+                    NN.disabled = true;
+                }
+            });
+
+            YN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYN.classList.remove('hidden');
+                    N.disabled = true;
+                    YY.disabled = true;
+                }
+            });
+
+            YNY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYNY.classList.remove('hidden');
+                    YNN.disabled = true;
+                }
+            });
+
+            YNN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYNN.classList.remove('hidden');
+                    YNY.disabled = true;
+                }
+            });
+
+            YYN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYN.classList.remove('hidden');
+                    AnswerYYN.classList.remove('hidden');
+                    YYY.disabled = true;
+                }
+            });
+
+            YYNY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNY.classList.remove('hidden');
+                    YYNN.disabled = true;
+                }
+            });
+            
+            YYNN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNN.classList.remove('hidden');
+                    YYNY.disabled = true;
+                }
+            });
+            
+            YYYN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYN.classList.remove('hidden');
+                    YYYY.disabled = true;
+                }
+            });
+            
+            YYNYY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNYY.classList.remove('hidden');
+                    YYNYN.disabled = true;
+                }
+            });
+            
+            YYNNY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNNY.classList.remove('hidden');
+                    YYNNN.disabled = true;
+                }
+            });
+            
+            YYNNN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNNN.classList.remove('hidden');
+                    YYNNY.disabled = true;
+                }
+            });
+            
+            YYNYN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYNYN.classList.remove('hidden');
+                    YYNYY.disabled = true;
+                }
+            });
+            
+            YYYNY.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYNY.classList.remove('hidden');
+                    YYYNN.disabled = true;
+                }
+            });
+            
+            YYYNN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYNN.classList.remove('hidden');
+                    YYYNY.disabled = true;
+                }
+            });
+            
+            YYYYN.addEventListener('change', function () {
+                if (this.checked) {
+                    AnswerYYYYN.classList.remove('hidden');
+                    YYYYY.disabled = true;
+                }
+            });
+            
+
+        });
+    
+
+        
+    </script>
+</body>
+</html>
