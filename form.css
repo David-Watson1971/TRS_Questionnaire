@@ -57,5 +57,8 @@
 @media (max-wisth: 500px) {
     .form {
         width: 300px;
+    };
+    .form_title {
+        font-size: 50px;
     }
 }
