@@ -53,3 +53,9 @@
     position: sticky;
     left: 300px;
 }
+
+@media (max-wisth: 500px) {
+    .form {
+        width: 300px;
+    }
+}
